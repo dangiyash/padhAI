@@ -4,6 +4,15 @@ import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import clientPromise from "@/lib/mongodb";
 import { compare } from "bcryptjs";
 
+import NextAuth from "next-auth";
+import { authOptions } from "@/lib/authOptions"; // ✅ Now it's safe
+
+const handler = NextAuth(authOptions);
+
+export { handler as GET, handler as POST }; // ✅ Only valid exports
+
+
+
 export const authOptions = {
   adapter: MongoDBAdapter(clientPromise),
   providers: [
