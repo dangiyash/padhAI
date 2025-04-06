@@ -1,6 +1,6 @@
-# Python Learning Platform
+# AI Powered Personalised Learning Platform
 
-A personalized Python learning platform that generates dynamic assessments using the Gemini API and creates customized learning paths based on skill gaps.
+A personalized learning platform that generates dynamic assessments using the Gemini API and creates customized learning paths based on skill gaps.
 
 ## Features
 
